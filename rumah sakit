@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Sakit GreenLife</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, a, ul, li, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #18bc9c;
+        }
+
+        /* About Section */
+        .about {
+            background: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        .about img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Services Section */
+        .services {
+            background: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        .service-item img {
+            max-width: 80%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .contact h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact form label {
+            font-size: 1rem;
+        }
+
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            background: #34495e;
+            color: white;
+        }
+
+        .contact form button {
+            background: #18bc9c;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact form button:hover {
+            background: #16a085;
+        }
+
+        /* Footer */
+        .footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #18bc9c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #16a085;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Rumah Sakit GreenLife</h1>
+            <nav class="nav">
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Selamat datang di Rumah Sakit GreenLife, tempat kami menyediakan perawatan medis yang luar biasa dengan sentuhan pribadi. Tim profesional kami yang berdedikasi memastikan kesehatan Anda adalah prioritas utama kami.</p>
+            <img src="https://indonesiaartikel.com/wp-content/uploads/2019/06/rumah-sakit-jakarta.jpg" alt="Rumah Sakit">
+
+        </div>
+    </section>
+
+    <section id="layanan" class="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150" alt="Perawatan Darurat">
+                    <h3>Perawatan Darurat</h3>
+                    <p>Layanan darurat 24/7 untuk menangani kondisi kritis.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150" alt="Rawat Jalan">
+                    <h3>Layanan Rawat Jalan</h3>
+                    <p>Konsultasi dan diagnostik yang komprehensif.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://via.placeholder.com/150" alt="Departemen Spesialis">
+                    <h3>Departemen Spesialis</h3>
+                    <p>Kardiologi, Neurologi, Ortopedi, dan lainnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form id="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rumah Sakit GreenLife. Hak cipta dilindungi undang-undang. <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Gulir halus untuk navigasi
+        $(document).ready(function() {
+            $('.nav a').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    const hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+
+            // Pesan saat pengiriman formulir kontak
+            $('#contact-form').on('submit', function(event) {
+                event.preventDefault();
+                alert('Terima kasih telah menghubungi kami! Kami akan segera merespon Anda.');
+                $(this).trigger('reset');
+            });
+        });
+    </script>
+</body>
+</html>
